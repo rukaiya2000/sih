@@ -688,6 +688,7 @@ p {
     }
 
     .services .services-title-icon .services-title {
+        padding-top: 5%;
         font-size: 22px;
         line-height: 30px;
         font-weight: 600;
