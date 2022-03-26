@@ -547,7 +547,7 @@ p {
 .home-content {
     position: relative;
     z-index: 9;
-    padding-top: 180px;
+    padding-top: 100px;
     padding-bottom: 200px;
 }
 
