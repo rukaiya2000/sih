@@ -1203,7 +1203,7 @@ p {
         }
 
             .faq-area .faq-accordion .accordion .card .card-header a::before {
-                content: '\ea58';
+                content: '^';
                 font-family: 'LineIcons';
                 position: absolute;
                 top: 50%;
@@ -1212,7 +1212,7 @@ p {
             }
 
         .faq-area .faq-accordion .accordion .card .card-header .collapsed::before {
-            content: '\ea5c';
+            content: '>';
         }
 
     .faq-area .faq-accordion .accordion .card .card-body {
