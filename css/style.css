@@ -2209,3 +2209,7 @@ tbody tr:nth-child(odd) {
 .topfive svg:hover{ 
 color: #1668ec;
 }
+.vid{
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
