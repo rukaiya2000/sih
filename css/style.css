@@ -2206,9 +2206,18 @@ tbody tr:nth-child(odd) {
 
 
 /* icon top 5 */
-.topfive svg:hover{ 
-color: #1668ec;
+.topfive a svg{
+    width: 1em;
+    height: 1em;
+    transition: all 0.5s;
 }
+
+.topfive a svg:hover{ 
+width: 1.4em;
+height: 1.4em;
+}
+
+
 .vid{
     padding-left: 0px!important;
     padding-right: 0px!important;
