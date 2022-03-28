@@ -2203,3 +2203,9 @@ tbody tr:nth-child(odd) {
         margin-top: 16px;
     }
 }
+
+
+/* icon top 5 */
+.topfive svg:hover{ 
+color: #1668ec;
+}
