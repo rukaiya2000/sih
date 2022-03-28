@@ -2222,3 +2222,11 @@ height: 1.4em;
     padding-left: 0px!important;
     padding-right: 0px!important;
 }
+
+.footer-support a{
+    color: rgb(173, 173, 173);
+    transition: all 0.5s;
+    }
+.footer-support a:hover{
+color: #fff;
+}
