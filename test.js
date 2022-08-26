@@ -9,17 +9,17 @@ function load() {
 }
 
 function loadDropDown(){
-     fetch('./colleges.json')
+     fetch('http://localhost:8083/api/college/all')
      .then(res=>  res.json())
      .then(data=>{
-          //console.log("WORKED>>")
+          //console.log("WORKED>>"+data[0]['id'])
           $.each(data, function(i,obj)
         { 
-           //console.log(obj);
+            console.log(obj);
             $("#dropdown1").append(
                  $('<option></option>')
-                        .val(obj["College Name"])
-                        .html(obj["College Name"]));
+                        .val(obj["college_name"])
+                        .html(obj["college_name"]));
             
         });
 
@@ -28,8 +28,8 @@ function loadDropDown(){
            //console.log(obj);
             $("#dropdown2").append(
                  $('<option></option>')
-                        .val(obj["College Name"])
-                        .html(obj["College Name"]));
+                        .val(obj["college_name"])
+                        .html(obj["college_name"]));
         });
 
      })

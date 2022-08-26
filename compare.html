@@ -139,67 +139,63 @@
           
           <tbody id="tabledata">
             <tr>
-              <th scope="row">College Name</th>
+              <th scope="row">college_name</th>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <th scope="row">Genders Accepted</th>
+              <th scope="row">students_enrolled</th>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <th scope="row">Campus Size</th>
+              <th scope="row">rating</th>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <th scope="row">Total Faculty</th>
+              <th scope="row">total_faculty</th>
+              <td></td>
+              <td></td>
+            </tr>
+            
+            <tr>
+              <th scope="row">university</th>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <th scope="row">Established Year</th>
+              <th scope="row">courses</th>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <th scope="row">Rating</th>
+              <th scope="row">facilities</th>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <th scope="row">University</th>
+              <th scope="row">city</th>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <th scope="row">Facilities</th>
+              <th scope="row">state</th>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <th scope="row">City</th>
+              <th scope="row">country</th>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <th scope="row">State</th>
+              <th scope="row">college_type</th>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <th scope="row">Country</th>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">College Type</th>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">Average Fees</th>
+              <th scope="row">average_fees</th>
               <td></td>
               <td></td>
             </tr>
@@ -235,19 +231,19 @@
                 // alert("2->"+ college2);
                 
                 
-                fetch('./colleges.json')
+                fetch('http://localhost:8083/api/college/all')
                 .then(res=>  res.json())
                 .then(data=>{
                       var collegeObj1 =null;                              
                       var collegeObj2 = null;
                       for(i=0;i< data.length;i++){
-                          if(data[i]["College Name"] == college1){
+                          if(data[i]["college_name"] == college1){
                                 //return data[i];
                                 //console.log(data[i]["College Name"]+"<<<")
                                 collegeObj1 = data[i];
                           }
     
-                          if(data[i]["College Name"] == college2){
+                          if(data[i]["college_name"] == college2){
                                 //return data[i];
                                 //console.log(data[i]["College Name"]+"<<<")
                                 collegeObj2 = data[i];
